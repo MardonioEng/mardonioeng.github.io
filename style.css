@@ -18,11 +18,12 @@ body {
   }
 
   h1 {
+    font-size: 4rem;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 2px solid #00ff00;
+    border-right: 3px solid #00ff00;
     width: 0;
-    animation: typing 3s steps(12, end) forwards, blink 0.5s step-end infinite alternate;
+    animation: typing 1.5s steps(12, end) forwards, blink 0.3s step-end infinite alternate;
   }
 
   @keyframes typing {
