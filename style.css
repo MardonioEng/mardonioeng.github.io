@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: black;
+    color: #00ff00;
+    font-family: monospace;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  h1 {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #00ff00;
+    width: 0;
+    animation: typing 3s steps(12, end) forwards, blink 0.5s step-end infinite alternate;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 13ch;
+    }
+  }
+
+  @keyframes blink {
+    from {
+      border-right-color: #00ff00;
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
+
+  footer {
+    text-align: center;
+    padding: 0.5rem;
+  }
